@@ -1,0 +1,18 @@
+.menu > ul {
+    padding: 30px 50px 30px 70px;
+    border-right: 1px solid #fff;
+}
+
+.item {
+    padding: 20px 0;
+}
+
+.link {
+    font-size: 20px;
+    text-transform: uppercase;
+    composes: textColor from '../../App.module.css'
+}
+
+.linkActive {
+    composes: activeColor from '../../App.module.css'
+}

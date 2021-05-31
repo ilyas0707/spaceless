@@ -1,0 +1,101 @@
+.about {
+    display: flex;
+}
+
+.item {
+    width: 50%;
+}
+
+.item > img {
+    width: 300px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+    composes: activeColor from '../../App.module.css';
+}
+
+.heading > span {
+    padding-top: 10px;
+    display: inline-block;
+    width: 177px;
+    border-bottom: 2px solid #fff;
+}
+
+.text {
+    font-size: 22px;
+    composes: textColor from '../../App.module.css';
+}
+
+.space {
+    display: flex;
+    justify-content: center;
+    composes: backgroundColor from '../../App.module.css';
+}
+
+.planet {
+    width: 250px;
+    height: 250px;
+    border-radius: 120px;
+    background-size: 374px;
+    background-color: #fff;
+    transform: rotate(20deg);
+    animation: rotate 25s infinite linear;
+    position: relative;
+}
+
+.mine {
+    background: url(https://1.bp.blogspot.com/_9DvzmslTIME/TQrLOe9Hx0I/AAAAAAAAAhg/X2xPdygbRgA/s400/planet_Arnessk1200.png);
+    box-shadow: inset 8px 8px 10px rgba(255, 255, 255, 0.4),
+        inset -19px -19px 70px rgba(0, 0, 0, 0.9),
+        inset -5px -5px 8px rgba(0, 0, 0, 0.7),
+        -5px -5px 10px 1px rgba(255, 255, 255, 0.2),
+        5px 5px 30px 1px rgba(0, 0, 0, 0.5);
+}
+
+.planet > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    text-shadow: 1px 1px 10px #000000;
+}
+
+@keyframes rotate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 0;
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 0;
+    }
+}
+@-moz-keyframes rotate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 0;
+    }
+}
+@-o-keyframes rotate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 400px 0;
+    }
+}
